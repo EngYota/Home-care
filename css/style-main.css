@@ -22197,4 +22197,58 @@ $grid-breakpoints: (
   h2 {
     font-size: 2.2rem; }
   h3 {
-    font-size: 2.0rem; } }
+    font-size: 2.0rem; }
+   }
+
+  .mobile-fit-gentle button.accordion {
+    width: 100%;
+    background-image:-webkit-linear-gradient(90deg, #04acb5 0%, #94eae0 100%);
+    background-image: linear-gradient(90deg, #04acb5 0%, #94eae0 100%);
+    border: none;
+    outline: none;
+    text-align: left;
+    padding: 15px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+    margin: 10px 0;
+    border-radius: 8px;
+  }
+  
+ .mobile-fit-gentle button.accordion:after {
+    content: "\25BA";
+    font-family: "Font Awesome 5 Free";
+    font-size: 18px;
+    float: right;
+  }
+  
+  .mobile-fit-gentle button.accordion.is-open:after {
+    content: "\25B2";
+  }
+  
+ .mobile-fit-gentle button.accordion:hover,
+ .mobile-fit-gentle button.accordion.is-open {
+    background-color: #ddd;
+  }
+  
+  .mobile-fit-gentle .accordion-content {
+    background-color: white;
+    border-left: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke;
+    padding: 0 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+  }
+  .mobile-fit-gentle .accordion-content h4{
+    font-size: 14px;
+  }
+  .mobile-fit-gentle .accordion-content p{
+    font-size: 12px;
+  }
+  .mobile-fit-gentle .accordion-content .tm-sc-gallery.gallery-style1-current-theme .tm-gallery{
+    margin-bottom: 10px;
+  }
+  

@@ -1436,3 +1436,35 @@ rs-loader.spinner6{width:40px;height:40px;-webkit-transform:translate(-50%,-50%)
 
 /* NEW CANVAS ANIMATIONS ON SLIDE BG'S */
 .bgcanvas { display: none; position: absolute; oveflow: hidden; }
+@media only screen and (max-width: 768px) {
+	#slider-4-slide-9-layer-18 ,
+	 #slider-4-slide-13-layer-18 {
+		top: -40px !important;
+		
+	}
+	#slider-4-slide-9-layer-21,
+	#slider-4-slide-13-layer-21 {
+		top: -52px !important;
+	}
+	#slider-4-slide-9-layer-18 span,
+	 #slider-4-slide-13-layer-18 span{
+		font-size: 50px !important;
+	 }
+
+}
+@media only screen and (max-width: 479px) {
+	#slider-4-slide-9-layer-18 ,
+	 #slider-4-slide-13-layer-18 {
+		top: -25px !important;
+		
+	}
+	#slider-4-slide-9-layer-21,
+	#slider-4-slide-13-layer-21 {
+		top: -32px;
+	}
+	#slider-4-slide-9-layer-18 span,
+	 #slider-4-slide-13-layer-18 span{
+		font-size: 30px !important;
+	 }
+
+}

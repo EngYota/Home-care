@@ -6,7 +6,6 @@
 /*==========  Mobile First Method  ==========*/
  
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {}
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {}
@@ -18,7 +17,11 @@
 @media (min-width: 1200px) {}
 
 /* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {}
+@media (min-width: 1400px) {
+	.mobile-fit-gentle{
+		display: none;
+	}
+}
 
 
 /*==========  Non-Mobile First Method  ==========*/
@@ -44,6 +47,9 @@ Apple iPod Touch (5th generation)
 */
 @media (min-width: 1136px) and (max-width: 1279px) {
 	/*body {	font-size: 16px; }*/
+	.mobile-fit-gentle{
+		display: none;
+	}
 }
 
 /*
@@ -55,6 +61,12 @@ Apple iPod Touch (4th generation)
 	h1 { font-size:3em; }		/* 39px */
 	h2 { font-size:2.3077em; }	/* 30px */
 	h3 { font-size:1.8461em; }	/* 24px */
+	.mobile-fit-gentle{
+		display: none;
+	}
+	.page-gentle .divider-break::before{
+		display: none;
+	}
 }
 
 /*
@@ -74,6 +86,12 @@ Samsung Galaxy
 	h1 { font-size:3em; }		/* 39px */
 	h2 { font-size:2.3077em; }	/* 30px */
 	h3 { font-size:1.8461em; }	/* 24px */
+	.desk-fit{
+		display: none;
+	}
+	.page-gentle .divider-break::before{
+		display: none;
+	}
 }
 
 
@@ -93,20 +111,53 @@ Samsung Galaxy
 	h1 { font-size:2.5em; }		/* 30px */
 	h2 { font-size:2em; }		/* 24px */
 	h3 { font-size:1.6667em; }	/* 20px */
+
+
 }
+@media only screen and (max-width: 479px) {
 
-
-
-
-/*
-Very common low res
-*/
-/*@media (max-width: 479px) {
-	body {	font-size: 12px; }
-	h1 { font-size:2.5em; }
-	h2 { font-size:2em; }
-	h3 { font-size:2em; }
-	h4 { font-size:1.3333em; }
-	h5 { font-size:1.1667em; }
-	h6 { font-size:1em; }
-}*/
+	header#header .header-top{
+		display: none;
+	}
+	.tm-sc-animated-layer-advanced
+	 .animated-layer-advanced-inner 
+	 .layer-image-wrapper{
+		display: none;
+	 }
+	 .pt-lg-90 {
+		padding-top: 30px !important;
+	}
+	.pb-lg-60,.pb-sm-50{
+		padding-top: 40px !important;
+		padding-bottom: 30px !important;
+	}
+	.pt-100 .container{
+		padding-bottom: 30px !important;
+	}
+	.mb-sm-80 {
+		margin-bottom: 20px !important;
+	}
+	.widget-contact {
+		margin-top: 0 !important;
+	}
+	.tm-sc-section-title{margin-bottom: 15px !important;}
+	.tm-sc-section-title .title-wrapper .title{
+		font-size: 25px;
+	}
+	.section-content{margin-bottom: 0 !important;}
+	.section-content h6,
+	.section-content h2{
+		text-align: center;
+	}
+	.page-gentle .tabs{
+		display: block;
+	}
+	.desk-fit{
+		display: none;
+	}
+	.page-gentle .divider-break::before{
+		display: none;
+	}
+}
+@media only screen and (max-width: 320px) {
+}
